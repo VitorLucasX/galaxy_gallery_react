@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import EstilosGlobais from './components/EstilosGlobais'
-import Cabecalho from './components/Cabecalho/cabecalho'
 import BarraLateral from './components/BarraLateral/BarraLateral'
 import Banner from './components/Banner/Banner'
 import bannerBackground from './assets/banner.png'
@@ -9,6 +8,7 @@ import fotos from './fotos.json'
 import { useEffect, useState } from "react"
 import ModalZoom from './components/ModalZoom/ModalZoom'
 import Rodape from './components/Rodape/Rodape'
+import Cabecalho from './components/Cabecalho/Cabecalho'
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -69,7 +69,7 @@ const App = () => {
     <FundoGradiente>
       <EstilosGlobais />
       <AppContainer>
-        <Cabecalho 
+        <Cabecalho
           filtro={filtro}
           setFiltro={setFiltro}
         />
